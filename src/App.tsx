@@ -40,9 +40,8 @@ export default function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
-  // Target date: 1 month from now
-  const targetDate = new Date();
-  targetDate.setMonth(targetDate.getMonth() + 1);
+  // Target date: 4 April 2026
+  const targetDate = new Date('2026-04-04T10:00:00');
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -104,7 +103,7 @@ export default function App() {
             </motion.div>
 
             <h2 className="font-serif text-xl tracking-[0.3em] uppercase text-pink-600 mb-4">The Wedding of</h2>
-            <h1 className="font-script text-7xl sm:text-8xl text-pink-700 mb-8">Sarah & Ahmad</h1>
+            <h1 className="font-script text-7xl sm:text-8xl text-pink-700 mb-8">Aulia & Jarwal</h1>
             
             <div className="max-w-md mx-auto mb-12">
               <p className="font-serif italic text-pink-800 leading-relaxed text-lg">
@@ -149,8 +148,8 @@ export default function App() {
                     <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6">
                       <img src="https://picsum.photos/seed/bride/400/400" alt="Bride" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     </div>
-                    <h3 className="font-script text-4xl text-pink-700 mb-2">Sarah Amelia, S.T.</h3>
-                    <p className="text-sm text-pink-600 font-medium">Putri dari Bapak Fulan & Ibu Fulanah</p>
+                    <h3 className="font-script text-4xl text-pink-700 mb-2">Aulia Ramadani</h3>
+                    <p className="text-sm text-pink-600 font-medium">Putri dari Bapak ABD AZIZ & Ibu NABASIA</p>
                     <a href="#" className="mt-3 text-pink-400 hover:text-pink-600 transition-colors"><Instagram className="w-5 h-5" /></a>
                   </div>
 
@@ -160,8 +159,8 @@ export default function App() {
                     <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6">
                       <img src="https://picsum.photos/seed/groom/400/400" alt="Groom" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     </div>
-                    <h3 className="font-script text-4xl text-pink-700 mb-2">Ahmad Hidayat, M.Kom.</h3>
-                    <p className="text-sm text-pink-600 font-medium">Putra dari Bapak Fulan & Ibu Fulanah</p>
+                    <h3 className="font-script text-4xl text-pink-700 mb-2">Jarwal</h3>
+                    <p className="text-sm text-pink-600 font-medium">Putra dari Bapak H RAMLI & Ibu HJ HAWANG</p>
                     <a href="#" className="mt-3 text-pink-400 hover:text-pink-600 transition-colors"><Instagram className="w-5 h-5" /></a>
                   </div>
                 </div>
@@ -187,10 +186,10 @@ export default function App() {
                         <Calendar className="w-8 h-8 text-pink-600" />
                       </div>
                       <h3 className="font-serif text-2xl font-bold text-pink-800 mb-2 uppercase tracking-wider">Akad Nikah</h3>
-                      <p className="font-serif text-pink-600">Minggu, 12 April 2026</p>
+                      <p className="font-serif text-pink-600">Sabtu, 4 April 2026</p>
                       <div className="flex items-center gap-2 mt-2 text-pink-600">
                         <Clock className="w-4 h-4" />
-                        <span>08.00 - 10.00 WIB</span>
+                        <span>10.00 - Selesai</span>
                       </div>
                     </div>
                   </div>
@@ -201,10 +200,10 @@ export default function App() {
                         <Heart className="w-8 h-8 text-pink-600" />
                       </div>
                       <h3 className="font-serif text-2xl font-bold text-pink-800 mb-2 uppercase tracking-wider">Resepsi</h3>
-                      <p className="font-serif text-pink-600">Minggu, 12 April 2026</p>
+                      <p className="font-serif text-pink-600">Sabtu, 4 April 2026</p>
                       <div className="flex items-center gap-2 mt-2 text-pink-600">
                         <Clock className="w-4 h-4" />
-                        <span>11.00 - 13.00 WIB</span>
+                        <span>12.00 - Selesai</span>
                       </div>
                     </div>
                   </div>
@@ -214,7 +213,7 @@ export default function App() {
                   <MapPin className="w-8 h-8 text-pink-600 mb-4" />
                   <h3 className="font-serif text-xl font-bold text-pink-800 mb-2">Lokasi Acara</h3>
                   <p className="font-serif text-pink-600 max-w-sm mb-6">
-                    Grand Ballroom Hotel Mulia, Jakarta Pusat
+                    BTN PEPABRI SUDIANG BLOK E12/7
                   </p>
                   <button className="px-8 py-3 bg-pink-600 text-white rounded-full font-serif tracking-widest uppercase hover:bg-pink-700 transition-all shadow-lg flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -310,7 +309,7 @@ export default function App() {
 
             {/* Footer */}
             <footer className="py-12 bg-pink-100 text-center">
-              <h2 className="font-script text-4xl text-pink-700 mb-4">Sarah & Ahmad</h2>
+              <h2 className="font-script text-4xl text-pink-700 mb-4">Aulia & Jarwal</h2>
               <p className="font-serif text-pink-600 text-sm tracking-widest uppercase">Terima Kasih</p>
             </footer>
           </motion.div>
