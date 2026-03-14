@@ -146,7 +146,7 @@ export default function App() {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
                   <div className="flex flex-col items-center">
                     <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6">
-                      <img src="https://picsum.photos/seed/bride/400/400" alt="Bride" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                      <img src="./bride.jpg" alt="Bride" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = "https://picsum.photos/seed/bride/400/400" }} referrerPolicy="no-referrer" />
                     </div>
                     <h3 className="font-script text-4xl text-pink-700 mb-2">Aulia Ramadani</h3>
                     <p className="text-sm text-pink-600 font-medium">Putri dari Bapak ABD AZIZ & Ibu NABASIA</p>
@@ -157,7 +157,7 @@ export default function App() {
 
                   <div className="flex flex-col items-center">
                     <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6">
-                      <img src="https://picsum.photos/seed/groom/400/400" alt="Groom" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                      <img src="./groom.jpg" alt="Groom" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = "https://picsum.photos/seed/groom/400/400" }} referrerPolicy="no-referrer" />
                     </div>
                     <h3 className="font-script text-4xl text-pink-700 mb-2">Jarwal</h3>
                     <p className="text-sm text-pink-600 font-medium">Putra dari Bapak H RAMLI & Ibu HJ HAWANG</p>
@@ -270,12 +270,10 @@ export default function App() {
                 </div>
 
                 <div className="mt-12 space-y-4 max-h-64 overflow-y-auto pr-2 custom-scrollbar">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="p-6 bg-pink-50 rounded-2xl border border-pink-100 text-left">
-                      <p className="font-bold text-pink-800 mb-1">Sahabat Sarah</p>
-                      <p className="text-pink-600 text-sm italic">"Selamat ya Sarah & Ahmad! Semoga menjadi keluarga yang sakinah mawaddah warahmah. Amin!"</p>
-                    </div>
-                  ))}
+                  {/* Ucapan akan muncul di sini */}
+                  <div className="text-center py-8 text-pink-300 italic">
+                    Belum ada ucapan...
+                  </div>
                 </div>
               </motion.div>
             </Section>
@@ -296,12 +294,12 @@ export default function App() {
                   <div className="p-6 bg-white rounded-2xl border border-pink-100 shadow-sm">
                     <p className="text-xs uppercase tracking-widest text-pink-400 font-bold mb-2">Bank BCA</p>
                     <p className="text-xl font-serif font-bold text-pink-800">1234567890</p>
-                    <p className="text-sm text-pink-600">a.n. Sarah Amelia</p>
+                    <p className="text-sm text-pink-600">a.n. Aulia Ramadani</p>
                   </div>
                   <div className="p-6 bg-white rounded-2xl border border-pink-100 shadow-sm">
                     <p className="text-xs uppercase tracking-widest text-pink-400 font-bold mb-2">Bank Mandiri</p>
                     <p className="text-xl font-serif font-bold text-pink-800">0987654321</p>
-                    <p className="text-sm text-pink-600">a.n. Ahmad Hidayat</p>
+                    <p className="text-sm text-pink-600">a.n. Jarwal</p>
                   </div>
                 </div>
               </motion.div>
